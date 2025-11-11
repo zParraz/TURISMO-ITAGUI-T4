@@ -2,238 +2,121 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Receta Bandeja Paisa</title>
-  <link rel="stylesheet" href="General.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- Aquí puedes enlazar el archivo CSS -->
-  <link rel="" href="">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="general.css" />
 </head>
 
-<!--Bueno aqui ya comenzamos con las recetas de cada una-->
-
-<body>
-  <!--Una cosa el botón va al lado del titulo del nombre de la receta ejemplo bandeja paisa-->
-  <section class="barra-titulo-recete d-flex flex-column flex-row gap-2">
-    <div>
-      <section class="barra-navegacion d-flex justify-content-center">
-        <nav class="container-fluid nav gap-5 justify-content-center d-flex p-1 z-3 position-fixed"
-          style="background-color: rgba(4, 118, 184, 0.8); backdrop-filter: blur(8px);">
-          <a class="nav-link text-light rounded-4" id="nav1" href="">ALOJAMIENTO</a>
-          <a class=" nav-link text-light rounded-4" id="nav2" href="">NOTICIAS</a>
-          <a class=" nav-link text-light rounded-4" id="nav3" href="">CONTÁCTENOS</a>
-        </nav>
-      </section>
-      <div class="bg-light p-4"></div>
-      <section class="Receta container-fluid d-flex justify-content-center text-light pb-5"
-        style="border-bottom-right-radius: 3rem;border-bottom-left-radius: 3rem; background-color: rgba(4, 118, 184, 0.8); backdrop-filter: blur(8px);">
-        <h1 class="position-relative" style="top: 2rem; font-size: 80px;">RECETA</h1> <!--TITULO GRANDE-->
-        <!--Se supone que esta dentro de un cuadro-->
-      </section>
-    </div>
-    <div class="d-flex flex-row align-items-center justify-content-center gap-5">
-      <div class="icono">
-        <a href="GASTRONOMIA.HTML" class="boton"> <img src="IMAGENES RESTAURANTE/left-arrow.png"
-            class="rounded-circle p-1 bg-warning" alt="" width="50"> </a>
-        <!--Este boton de forma circulo que tiene una flecha pero no sé... este boton se devuelve a la pagina gastronomia-->
+<body class="bg-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+    style="background-color: rgb(0, 120, 220,0.85); backdrop-filter: blur(8px);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="GASTRONOMIA.HTML">Gastronomía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+        </ul>
       </div>
-      <h3 style="font-size: 5rem;">Bandeja Paisa</h3> <!--Fuera del cuadro, o sea debajo del cuadro-->
+    </div>
+  </nav>
+  <!-- HEADER -->
+  <header class="text-center text-light mt-5 d-flex flex-column align-items-center justify-content-center">
+    <h1 class="display-1 fw-bold mt-5" style="color: rgb(252, 182, 47);">RECETA</h1>
+    <img src="Bpaisaimagenes/down-arrow.png" alt="" width="100">
+  </header>
+
+  <!-- TÍTULO + BOTÓN VOLVER -->
+  <!-- IMAGEN + UTENSILIOS + INGREDIENTES -->
+  <main class="container my-4">
+    <div class="row g-4">
+      <!-- IMAGEN -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="position-relative text-center">
+          <img src="Bpaisaimagenes/bandeja-paisa-5321840.jpg" class="img-fluid rounded-4 shadow" />
+          <div class="position-absolute top-0 start-50 translate-middle-x text-light fw-bold fs-1"
+            style="text-shadow:0 0 15px black;">
+            BANDEJA PAISA
+          </div>
+        </div>
+      </div>
+
+      <!-- UTENSILIOS + INGREDIENTES -->
+      <div class="col-lg-6">
+        <!-- UTENSILIOS -->
+        <section class="p-3 bg-white rounded-4 shadow mb-4">
+          <h3 class="fs-1 mb-3">Utensilios</h3>
+          <div class="row row-cols-2 row-cols-md-3 g-2">
+            <div class="col">Olla</div>
+            <div class="col">Sartén</div>
+            <div class="col">Paño de cocina</div>
+            <div class="col">Cuchara</div>
+            <div class="col">Cuchara de cocina</div>
+            <div class="col">Licuadora</div>
+            <div class="col">Olla a presión</div>
+          </div>
+        </section>
+
+        <!-- INGREDIENTES -->
+        <section class="p-3 bg-white rounded-4 shadow">
+          <h3 class="fs-1 mb-3">Ingredientes</h3>
+          <div class="row g-2">
+            <div class="col-12 col-md-6">
+              <ul class="list-unstyled">
+                <li>1 1/2 cucharadas de aceite</li>
+                <li>2 tallos de cebolla larga</li>
+                <li>2 tomates maduros</li>
+                <li>1 sobre de caldo con costilla</li>
+                <li>3 tazas de agua</li>
+                <li>1/2 libra de fríjoles bola roja</li>
+                <li>1 zanahoria mediana</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <ul class="list-unstyled">
+                <li>1/4 libra de carne molida</li>
+                <li>1/2 libra de arroz cocinado</li>
+                <li>1/4 libra de tocino</li>
+                <li>4 chorizos tipo cóctel</li>
+                <li>4 huevos fritos</li>
+                <li>1 aguacate</li>
+                <li>4 arepas pequeñas</li>
+                <li>4 tajadas de plátano maduro</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- PREPARACIÓN -->
+  <section class="container my-5">
+    <div class="p-4 rounded-4 text-light shadow" style="background-color: rgba(0,120,220,0.85);">
+      <h3 class="fs-1 mb-4">¡¡A Cocinar!!</h3>
+      <ol class="fs-5">
+        <li class="mb-3"><strong>PASO 1:</strong> Prepara los fríjoles...</li>
+        <li class="mb-3"><strong>PASO 2:</strong> Agrega el agua...</li>
+        <li class="mb-3"><strong>PASO 3:</strong> Licúa la zanahoria...</li>
+        <li class="mb-3"><strong>PASO 4:</strong> Espesa los fríjoles...</li>
+        <li class="mb-3"><strong>PASO 5:</strong> Prepara la carne molida...</li>
+        <li class="mb-3"><strong>PASO 6:</strong> Prepara los chicharrones...</li>
+        <li class="mb-3"><strong>PASO 7:</strong> Prepara los chorizos...</li>
+        <li class="mb-3"><strong>PASO 8:</strong> Prepara las arepas...</li>
+        <li class="mb-3"><strong>PASO 9:</strong> Sirve y disfruta...</li>
+      </ol>
     </div>
   </section>
-  <main class="gap-3 d-flex flex-row">
-    <section class="container rounded-4" style="width: 50%;">
-      <article class="d-flex flex-column align-items-center justify-content-center">
-        <div class="" style="background-image: url(Bpaisaimagenes/bandeja.jpg); padding: 20rem; background-repeat: no-repeat; background-size: contain;">
-          <h3 class="text-light align-items-center " style="font-size: 4rem; width:max-content;">Bandeja Paisa</h3>
-        </div>
-      </article>
-    </section>
-    <section style="width: 50%;">
-      <!--Los utensilios estara en lista y la imagen pequeña o icono y su nombre-->
-      <section class="utensilios container d-flex flex-column gap-5 mb-5">
-        <h3 style="font-size: 3rem;">Utensilios</h3>
-        <!-- Aquí se pueden poner íconos c imágenes como decia-->
-        <article class="utensiliosicons container text-center">
-          <article class="row" style="column-gap: 1rem; row-gap: 3rem;">
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/Olla.png" alt="" width="100">
-              <p class="">Olla</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/sarten.png" alt="" width="100">
-              <p class="">Sartén</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/pañococina.png" alt="" width="100">
-              <p>Paño de cocina</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/cuchara.png" alt="" width="100">
-              <p class="">Cuchara</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/cucharacocina.png" alt="" width="100">
-              <p class="">Cuchara de cocina</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/licuadora.png" alt="" width="100">
-              <p class="">Licuadora</p>
-            </div>
-            <div class="col d-flex flex-column border-0 align-items-center justify-content-center" style="gap: 2rem;">
-              <img src="Bpaisaimagenes/ollapresion.png" alt="" width="100">
-              <p class="">Olla a presión</p>
-            </div>
-          </article>
-        </article>
-      </section>
-      <!--Pondre las imagenes en la carpeta Bpaisaimagenes por si las moscas aunque no se si se pondra en css-->
-      <!--Ahi esta los nombres de como se llama las imagenes y el orden-->
-      <!--Ya decides si quieres poner el nombre debajo de la imagen o al lado... aunque mi opinion 
-debajo de la imagen-->
-      <!--POR CIERTO LAS IMAGENES ESTAN SIN FONDO PUEEESS le quite el fondo si alguna no esta, me avisas  -->
-      <!-- Ya vamos con los ingredientes -->
-      <section class="ingredientes rounded-4 d-flex flex-column p-3 mb-5"
-        >
-        <h3 style="font-size: 3rem;">Ingredientes</h3>
-        <!--Este tambien estara en un cuadro NO ELTITULO solo los igredientes
-    este sera una lista ehhh no se como se llama cuando tiene unos cuadros para marcar lo que tienes-->
-        <article class="d-flex flex-column gap-1 align-items-start">
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1 1/2 cucharadas de aceite (21
-              g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 2 tallos de cebolla larga
-              finamente picada (30 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 2 tomates maduros sin piel y
-              finamente picados (240 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1 sobre de CALDO CON COSTILLA
-              MAGGI DESMENUZADO (9 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 3 tazas de agua (750 ml)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1/2 libra de fríjoles bola
-              roja remojados desde la noche
-              anterior (250 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1 zanahoria mediana, entera y
-              pelada (140 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1/4 libra de carne molida
-              magra (125 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1/2 libra de arroz blanco
-              cocinado (250 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1/4 libra de tocino carnudo
-              cortado en 4 porciones (125 g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 4 chorizos tipo coctel
-              previamente cocinados y dorados
-              (120
-              g)</p>
-          </div>
-          <div class="d-flex flex-row gap-2"> <img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 4 huevos fritos (200 g) </p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 1 aguacate partido en 4 porciones (110 g) </p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 4 arepas pequeñas redondas (80 g) </p>
-          </div>
-          <div class="d-flex flex-row gap-2"><img src="Bpaisaimagenes/stop.png" alt="" width="20" height="20">
-            <p> 4 tajadas de plátano maduro fritas (80 g) </p>
-          </div>
-        </article>
-      </section>
 
-      <!--AHORA A PREPARAR!!-->
-
-      <section class="preparacion rounded-4 d-flex flex-column p-3 mb-5"
-        >
-        <h3 style="font-size: 3rem;">¡¡A Cocinar!!</h3>
-
-        <!-- Por lo que tengo entendido el ARTICLE se usa para separar cosas dentro de una sección, 
-     por ejemplo, cada paso de la receta O SEA cuadros pequeños dentro del grande KKAKAKA no se-->
-        <article>
-          <h5>PASO 1 Prepara los fríjoles</h5>
-          <p>Calienta en una olla a presión una cucharada de aceite por 3 minutos a fuego medio; añade la
-            cebolla, el tomate y el sobre de <b>CALDO CON COSTILLA MAGGI DESMENUZADO</b> y revuelve para integrar bien,
-            finalmente cocina por 2 minutos o hasta que el tomate suelte sus jugos.</p>
-        </article>
-
-        <article>
-          <h5>PASO 2 Agrega el agua</h5>
-          <p>Adiciona las tres tazas de agua, los fríjoles y la zanahoria entera. Tapa la olla y cocina por 30 minutos.
-          </p>
-        </article>
-
-        <article>
-          <h5>PASO 3 Licúa la zanahoria con el caldo</h5>
-          <p>Pasado el tiempo de cocción retira la olla del fuego, sácale el aire con cuidado antes de destapar. Saca la
-            zanahoria y licúala con el caldo de los fríjoles.</p>
-        </article>
-
-        <article>
-          <h5>PASO 4 Puntada final a los fríjoles</h5>
-          <p>Agrega el licuado a la olla nuevamente para espesar, lleva a fuego bajo y revuelve de vez en cuando.</p>
-        </article>
-
-        <article>
-          <h5>PASO 5 Prepara la carne molida</h5>
-          <p>Calienta en una sartén el aceite restante por 3 minutos a fuego medio. Agrega la carne y con una cuchara
-            revuelve, deja cocinar por 10 minutos o hasta que esté bien cocinada.</p>
-        </article>
-
-        <article>
-          <h5>PASO 6 Prepara los chicharrones</h5>
-          <p>En una olla de fondo alto agrega 2 tazas de agua y el tocino cortado en trozos; tapa la olla y lleva al
-            fuego
-            medio por 20 minutos o hasta que el tocino esté bien cocinado y crocante. Retira del fuego y déjalos en
-            papel
-            absorbente para retirar el exceso de grasa.</p>
-        </article>
-
-        <article>
-          <h5>PASO 7 Prepara los chorizos</h5>
-          <p>En una sartén pequeña adiciona dos cucharadas de agua y los chorizos. Lleva al fuego medio hasta que los
-            chorizos estén bien dorados.</p>
-        </article>
-
-        <article>
-          <h5>PASO 8 Prepara las arepas</h5>
-          <p>En una parrilla o sartén a fuego medio debes poner las arepas y dorar por ambos lados.</p>
-        </article>
-
-        <article>
-          <h5>PASO 9 Sirve y disfruta</h5>
-          <p>En 4 bandejas o platos sirve arroz, fríjoles, carne molida, chicharrón, chorizo, huevo, aguacate, arepa y 1
-            tajada de plátano maduro, todo en porciones iguales.</p>
-        </article>
-      </section>
-    </section>
-  </main>
-  <!--PONDRE UNA DOS FOTOS COMO RESULTADO al lado de cada una o tres o una-->
-  <img src="" alt="" class=""> <!--La img se llama bandeja-->
-  <img src="" alt="" class=""> <!--la img se llama paisaa-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

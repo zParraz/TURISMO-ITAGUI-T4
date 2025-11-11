@@ -1,3 +1,51 @@
 * {
     transition: all 500ms;
 }
+
+@media (max-width: 1097.14px) {
+    #imagen {
+        width: 1700px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 960px) {
+    #imagen {
+        width: 953px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #imagen {
+        width: 764px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+@media (max-width: 414px) {
+    #imagen {
+        width: 440px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+#boton {
+    background-color: rgb(0, 120, 220);
+}
+
+#boton:hover {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s;
+}

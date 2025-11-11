@@ -2,99 +2,99 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arepas Paisas</title>
-
-  <!-- Aquí puedes enlazar el archivo CSS -->
-  <link rel="" href="">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="general.css"/> <!-- Transiciones y responsividad -->
 </head>
 
- <body>
-     <a href="#" class="boton"> </a> <!--Este boton de forma circulo 
-     este boton se devuelve a gastronomia-->
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+    style="background-color: rgb(0,120,220,0.85); backdrop-filter: blur(8px);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="GASTRONOMIA.HTML">Gastronomía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-     <!--Una cosa el botón va al lado del titulo del nombre de la receta ejemplo arepas paisas-->
+  <header class="text-center text-light mt-5 d-flex flex-column align-items-center justify-content-center">
+    <h1 class="display-1 fw-bold mt-5" style="color: rgb(252, 182, 47);">RECETA</h1>
+    <img src="Bpaisaimagenes/down-arrow.png" alt="" width="100">
+  </header>
 
-<header>
-    <h1>RECETA</h1> <!--TITULO GRANDE--> <!--Se supone que esta dentro de un cuadro-->
+  <main class="container my-4">
+    <div class="row g-4 d-flex">
+      <div class="col-lg-6">
+        <div class="position-relative text-center">
+          <img src="AREAREPITAS/arepasss.png" class="img-fluid rounded-4 shadow" width="600" />
+          <div class="position-absolute top-0 start-50 translate-middle-x text-light fw-bold fs-1"
+            style="text-shadow:0 0 15px black;">AREPAS PAISAS</div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <section class="p-3 bg-white rounded-4 shadow mb-4">
+          <h3 class="fs-1 mb-3">Utensilios</h3>
+          <div class="row row-cols-2 row-cols-md-3 g-2">
+            <div class="col">Recipiente</div>
+            <div class="col">Harina</div>
+            <div class="col">Sartén</div>
+            <div class="col">Tapa</div>
+          </div>
+        </section>
 
-    <h2>Areopas Paisas</h2> <!--Fuera del cuadro, o sea debajo del cuadro-->
-</header>
+        <section class="p-3 bg-white rounded-4 shadow">
+          <h3 class="fs-1 mb-3">Ingredientes</h3>
+          <div class="row g-2">
+            <div class="col-12 col-md-6">
+              <ul class="list-unstyled">
+                <li>200 gramos de harina de maíz precocida</li>
+                <li>100 cc de agua</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
 
-<!--Los utensilios estara en lista y la imagen pequeña o icono y su nombre-->
-
- <section id="utensilios">
-    <h3>Utensilios</h3>
-
-    <!-- Aquí se pueden poner íconos c imágenes como decia-->
-    <ul>
-      <li>Recipiente</li> <!--aqui va las imagenes rerere-->
-      <li>Harina</li> <!--aqui va las imagenes arinaoharina-->
-      <li>Sartén</li>  <!--aqui va las imagenes sasaten-->
-   <li>Tapa</li>  <!--aqui va las imagenes TAPITA-->
-      
-    </ul>
+  <section class="container my-5">
+    <div class="p-4 rounded-4 text-light shadow" style="background-color: rgba(0,120,220,0.85);">
+      <h3 class="fs-1 mb-4">¡¡A Cocinar!!</h3>
+      <ol class="fs-5">
+        <li class="mb-3"><strong>Paso 1:</strong> Mezcla el agua con la harina hasta obtener una masa húmeda pero
+          consistente. Deja reposar 10 minutos.</li>
+        <li class="mb-3"><strong>Paso 2:</strong> Calienta un sartén con una gota de aceite. Con las manos húmedas forma
+          bolitas de masa y aplánalas.</li>
+        <li class="mb-3"><strong>Paso 3:</strong> Cocínalas por ambos lados unos minutos hasta dorar. Sirve o rellena
+          con jamón y queso.</li>
+      </ol>
+    </div>
   </section>
-<!--Pondre las imagenes en la carpeta AREAREPITAS-->
 
-<img src="" alt="" class=""> <!--La img se llama rerere-->
-<img src="" alt="" class=""> <!--La img se llama arinaoharina-->
-<img src="" alt="" class=""> <!-- La img se llama TAPITA-->
+  <section class="container mb-5">
+    <h3 class="fs-2 text-center">Con qué acompañar la arepa paisa</h3>
+    <p class="text-center">Como todas las arepas, son muy versátiles: puedes comerlas con queso, jamón, mantequilla o
+      acompañando cualquier
+      plato.</p>
+    <div class="d-flex gap-3 mt-3 justify-content-center">
+      <img id="imagen" src="AREAREPITAS/hola.jpg" class="img-fluid rounded-4 shadow" width="600" />
+      <img id="imagen" src="AREAREPITAS/mistermusculo.jpg" class="img-fluid rounded-4 shadow" width="600" />
+    </div>
+  </section>
 
-<!--Ya los ingredientes-->
 
-<section id="ingredientees">
-  <h3>Ingredientes</h3>
-  <ul>
-    <li>200 gramos de harina de maíz fina precocida</li>
-     <li>100 centímetros cúbicos de agua</li>
-
-  </ul>
-</section>
-
-<!--Ahora de ccocococinar-->
-
-<section id="preparacion">
-  <h3>¡¡A Cocinar!!</h3>
-
-   <article>
-    <p><strong>Paso 1 Cómo hacer Arepa paisa</strong></p>
-    <p> 1. Comienza a preparar tus arepas paisa mezclando el agua con la harina.
-        Debe quedar una mezcla húmeda, pero consistente. De ser necesario, corrige con
-        más agua o harina para lograrla.</p>
-
-        <p><strong>Truco:</strong></p>
-    <p>Reposala por 10 minutos para que la harina se hidrate correctamente.</p>
-  </article>
-
-  <article>
-    <p><strong>Paso 2</strong></p>
-    <p>. Calienta un sartén con rocío vegetal o 1 gotita de aceite
-        esparramado con un papel o pincel de cocina. Luego, moja
-        tus manos y toma 1 cucharada de la masa. Arma con ella
-        una bolita del tamaño de una pelotita de golf.
-</p>
-   <p><strong>Paso 3</strong>  3. Dales la vuelta y cocínalas unos 3 minutos más. Sirve tus
-        arepas con tu platillo preferido, rellénalas con jamón
-        y queso para un delicioso desayuno o guárdalas una vez
-        frías en un recipiente hermético para consumirlas como snack.
-    </p>
-  </article>
-</section>
-
-<!--La receta o digamos que el cocinar ya termino la receta... esta parte sera como una recomendación o algo -->
-<h3>Con qué acompañar la arepa paisa</h3>
-    <p>
-        Al igual que los arepas clásicas, las arepas paisas son muy versátiles.
-        Para un rico y nutritivo desayuno, corta tu arepa paisa caliente por el medio
-        y rellénala con jamón y queso.
-    </p>
-
-<!--las dos imagenes como resultado-->
-<img src="" alt="" class=""> <!--Se llama hola-->
-<img src="" alt="" class=""> <!--mistermusculo-->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

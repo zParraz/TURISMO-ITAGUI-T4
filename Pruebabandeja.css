@@ -1,0 +1,31 @@
+.contenedor-imagen {
+    position: relative;
+    /* Permite posicionar los elementos internos de forma absoluta */
+    display: inline-block;
+    /* O ajusta según sea necesario */
+}
+
+.texto-superpuesto {
+    position: absolute;
+    /* Posiciona el texto sobre la imagen */
+    top: 10px;
+    /* Ajusta la posición desde la parte superior */
+    left: 20px;
+    /* Ajusta la posición desde la izquierda */
+    /* Añade otras propiedades de estilo según necesites */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para mayor legibilidad */
+    padding: 10px;
+}
+
+/* Ejemplo para centrar el texto */
+.texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Desplaza el texto hacia atrás para centrarlo perfectamente */
+    color: white;
+    font-size: 24px;
+}
