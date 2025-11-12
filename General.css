@@ -1,0 +1,111 @@
+* {
+    transition: all 500ms;
+}
+
+.hero {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.section-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+@media (max-width: 1097.14px) {
+    #imagen {
+        width: 1700px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 960px) {
+    #imagen {
+        width: 953px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #imagen {
+        width: 764px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .hero {
+        object-fit: cover;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 414px) {
+    #imagen {
+        width: 440px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+
+
+#boton {
+    background-color: rgb(0, 120, 220);
+}
+
+#boton:hover {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: #0078dc;
+    border-bottom: 3px solid #0078dc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#location:hover {
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(3px);
+}
+
+#verma {
+    background-color: rgba(0, 120, 220, 0.85);
+    color: white;
+}
+
+#verma:hover {
+    transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(3px);
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(0, 120, 220, 0.85);
+}
