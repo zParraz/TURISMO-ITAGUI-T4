@@ -7,6 +7,7 @@
   <title>Actividades</title>
   <link rel="stylesheet" href="General.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -33,12 +34,17 @@
   </nav>
 
   <!-- HERO -->
-  <header class="position-relative mt-5">
+  <header class="position-relative" style="margin-top: 5.5rem;">
     <img src="imagenes/general/Portada.jpg" class="hero" />
     <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bold"
       style="text-shadow:0 0 15px black;">Actividades</h1>
   </header>
 
+  <!-- SEARCH BAR -->
+  <div id="busqueda" class="search-bar shadow mt-0 position-relative" style="top: -4.3rem;">
+    <input type="text" placeholder="Buscar hotel..." />
+    <button><i class="bi bi-search"></i></button>
+  </div>
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container my-5 d-flex flex-column gap-5">
 
@@ -90,6 +96,7 @@
       </div>
     </div>
 
+    <!-- Ver más -->
     <div class="d-flex justify-content-center">
       <a href="#" id="verma" class="btn" style="width: fit-content; padding-inline: 3rem;">Ver más</a>
     </div>

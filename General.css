@@ -8,6 +8,83 @@
     backdrop-filter: blur(8px);
 }
 
+input::placeholder {
+    color: white;
+}
+
+#hoteles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search bar */
+.search-bar {
+    background-color: #007bff;
+    width: 60%;
+    margin: -30px auto 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.hotel-card {
+    background-color: rgba(0, 120, 220, 0.85);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.hotel-card img {
+    border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.arrow-btn {
+    background-color: #ffc107;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.arrow-btn:hover {
+    background-color: #ffca2c;
+}
+
 .hero {
     height: 55vh;
     width: 100%;
@@ -112,16 +189,16 @@ body {
 }
 
 #verma {
-    background-color: rgba(0, 120, 220, 0.85);
+    background-color: rgba(252, 182, 47, 0.85);
     color: white;
 }
 
 #verma:hover {
     transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    background-color: rgba(0, 120, 220, 0.85);
+    background-color: rgba(252, 182, 47, 0.85);
     backdrop-filter: blur(3px);
     transform: translateY(-5px);
-    box-shadow: 2px 2px 15px rgba(0, 120, 220, 0.85);
+    box-shadow: 2px 2px 15px rgba(252, 182, 47, 0.85);
 }
 
 @media (max-width:1920px) {
@@ -150,6 +227,20 @@ body {
     }
 }
 
+@media (max-width: 896px) {
+    #logo {
+        display: none;
+    }
+
+    #logomenu {
+        display: flex;
+    }
+    .search-bar {
+        width: 70%;
+    top: 0.5rem !important;
+    }
+}
+
 @media (max-width: 768px) {
     #imagen {
         width: 764px;
@@ -158,9 +249,18 @@ body {
     #margin {
         margin-top: 3.5rem;
     }
+
+    .search-bar {
+        width: 60%;
+    }
 }
 
 @media (max-width: 414px) {
+    .search-bar {
+        width: 80%;
+        top: 0.5rem !important; 
+    }
+
     .hero {
         object-fit: cover;
         height: 20vh;
@@ -231,4 +331,15 @@ body {
     #barranav {
         background-color: rgba(0, 120, 220);
     }
+
+    #hoteles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#busqueda {
+    background-color: rgb(0, 120, 220, 0.85) !important;
 }
