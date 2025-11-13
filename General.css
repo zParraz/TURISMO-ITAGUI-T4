@@ -1,17 +1,133 @@
 * {
     transition: all 500ms;
+    font-family: Arial, sans-serif;
+}
+
+#barranav {
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(8px);
 }
 
 .hero {
     height: 55vh;
     width: 100%;
     object-fit: cover;
-    filter: brightness(75%);
+    filter: brightness(50%);
 }
 
 .section-card {
     border-radius: 1.5rem;
     overflow: hidden;
+}
+
+footer {
+    background-color: rgba(0, 120, 220, 0.85);
+    color: white;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 20px;
+}
+
+footer h6 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.redes img {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.linea {
+    border: 0;
+    height: 1px;
+    background: white;
+    margin-top: 20px;
+}
+
+#infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#colabs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 3rem;
+    border-left: 1px solid;
+    border-color: #d9d9d965;
+}
+
+#boton {
+    background-color: rgb(0, 120, 220);
+}
+
+#boton:hover {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+#logocontain {
+    background-color: rgba(0, 120, 220, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: #0078dc;
+    border-bottom: 3px solid #0078dc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#location:hover {
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(3px);
+}
+
+#verma {
+    background-color: rgba(0, 120, 220, 0.85);
+    color: white;
+}
+
+#verma:hover {
+    transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(3px);
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(0, 120, 220, 0.85);
+}
+
+@media (max-width:1920px) {
+    #logomenu {
+        display: none;
+    }
 }
 
 @media (max-width: 1097.14px) {
@@ -49,9 +165,32 @@
         object-fit: cover;
         height: 20vh;
     }
-}
 
-@media (max-width: 414px) {
+    #colab1 {
+        width: 100px;
+    }
+
+    #colab2 {
+        width: 80px;
+    }
+
+    #infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #colabs {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: end;
+        justify-content: center;
+        border-left: none;
+        padding-inline-start: 0;
+
+    }
+
     #imagen {
         width: 440px;
     }
@@ -59,53 +198,37 @@
     #margin {
         margin-top: 3.5rem;
     }
-}
 
+    footer {
+        transform: scaleY(1);
+    }
 
+    #logo {
+        width: 100px;
 
-#boton {
-    background-color: rgb(0, 120, 220);
-}
+    }
 
-#boton:hover {
-    background-color: rgb(0, 0, 0);
-    transition: background-color 1s;
-}
+    #logocontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-body {
-    background-color: #f8f9fa;
-}
+    #menucontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    #logo {
+        display: none;
+    }
 
+    #logomenu {
+        display: flex;
+    }
 
-.card-hover:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.section-title {
-    color: #0078dc;
-    border-bottom: 3px solid #0078dc;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-#location:hover {
-    transition: background-color 1s ease-in-out;
-    background-color: rgba(0, 120, 220, 0.85);
-    backdrop-filter: blur(3px);
-}
-
-#verma {
-    background-color: rgba(0, 120, 220, 0.85);
-    color: white;
-}
-
-#verma:hover {
-    transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    background-color: rgba(0, 120, 220, 0.85);
-    backdrop-filter: blur(3px);
-    transform: translateY(-5px);
-    box-shadow: 2px 2px 15px rgba(0, 120, 220, 0.85);
+    #barranav {
+        background-color: rgba(0, 120, 220);
+    }
 }

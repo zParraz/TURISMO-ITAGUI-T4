@@ -1,81 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actividades</title>
+  <link rel="stylesheet" href="General.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div>
-        <div> <!--TITULO DE ACTIVIDADES-->
+<body class="bg-light">
 
-            <h1>Actividades</h1>
-        </div>
-        <div class="contenido actividades"> <!--este encierra todo el contenido, incluyendo imagenes, titulos, texto-->
-            <div class="senderismo"> <!--contenedor de senderismo-->
-                <div class="sub actividades">
-                    <h2>Senderismo</h2>
-                </div>
-                <div class="imagen senderismo">
-                    <img src="imagenes/naturaleza/senderismo.jpg" alt="senderismo en itagui">
-                </div>
-                <div class="texto senderismo">
-                    <p>
-                        Explora la reserva ambiental Pico el Manzanillo conocida por su ffauna y flora. Realizando
-                        rutas de senderismo guiadas que te conectarán con la naturaleza.
-                    </p>
-                </div>
-            </div>
-            <div class="yoga"> <!--contenedor de activiades en ditaires -->
-                <div class="sub ditaires">
-                    <h2>Yoga</h2>
-                </div>
-                <div class="img yoga">
-                    <img src="imagenes/naturaleza/senderismo.jpg" alt="Img yoga en ditaires">
-                </div>
-                <div class="texto senderismo">
-                    <p>
-                        Realiza sesiones de yoga en polideportivos y centros comerciales, parques activos y saludables:
-                        Participa en romba aerobica en diferentes plazas y parques
-                    </p>
-                </div>
-            </div>
-            <div class="caminatas"> <!--contenedor de caminatas recreativas-->
-                <div class="act caminatas">
-                    <h2>Caminatas recreativas</h2>
-                </div>
-                <div class="sub img acuaparque">
-                    <img src="imagenes/naturaleza/senderismo.jpg" alt="caminatas">
-                </div>
-                <div class="texto senderismo">
-                    <p>
-                        Disfruta de caminatas recreativas en parques y áreas naturales de Itagüí, ideales para toda la
-                        familia. Explora senderos bien mantenidos mientras disfrutas del aire libre y la belleza natural
-                        de la región.
-                    </p>
-                </div>
-            </div>
-            <div class="Ludotecas"> <!--contenedor de actividades acuaparque ditaires -->
-                <div class="act acuaparque">
-                    <h2>Ludotecas</h2>
-                </div>
-                <div class="sub img acuaparque">
-                    <img src="imagenes/naturaleza/senderismo.jpg" alt="Ludotecas">
-                </div>
-                <div class="texto senderismo">
-                    <p>
-                        LLeva a tus hijos a ludotecas ubicadas en parques y centros comerciales de Itagüí, donde podrán
-                        disfrutar de juegos y actividades recreativas en un entorno seguro y divertido, un buen espacio
-                        es el Polideportivo Óscar López EscobarF
-                    </p>
-                </div>
-            </div>
-        </div>
+  <!-- NAVBAR -->
+  <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="Naturaleza.Html">Naturaleza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <img id="logomenu" class="p-2" src="imagenes/general/LogoWhite.png" alt="" width="100">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Turismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="ALOJAMIENTO.html">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Somos</a></li>
+        </ul>
+      </div>
+      <img id="logo" class="p-3" src="imagenes/general/LogoWhite.png" alt="" width="100">
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <header class="position-relative mt-5">
+    <img src="imagenes/general/Portada.jpg" class="hero" />
+    <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bold"
+      style="text-shadow:0 0 15px black;">Actividades</h1>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container my-5 d-flex flex-column gap-5">
+
+    <!-- 1. SENDERISMO -->
+    <div class="row align-items-center bg-white shadow section-card p-0">
+      <div class="col-md-6 p-0 position-relative">
+        <img src="imagenes/naturaleza/senderismo.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="col-md-6 p-5">
+        <h2 class="fw-bold">Senderismo</h2>
+        <p>Explora la reserva ambiental Pico El Manzanillo, conocida por su fauna y flora. Realiza rutas de senderismo
+          guiadas que te conectarán con la naturaleza.</p>
+      </div>
     </div>
+
+    <!-- 2. YOGA -->
+    <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
+      <div class="col-md-6 p-0 position-relative">
+        <img src="imagenes/naturaleza/yoga.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="col-md-6 p-5">
+        <h2 class="fw-bold">Yoga</h2>
+        <p>Participa en sesiones de yoga en parques activos y saludables, o en espacios al aire libre como Ditaires.
+          También puedes disfrutar de actividades de rumba aeróbica y bienestar físico.</p>
+      </div>
     </div>
+
+    <!-- 3. CAMINATAS RECREATIVAS -->
+    <div class="row align-items-center bg-white shadow section-card p-0">
+      <div class="col-md-6 p-0 position-relative">
+        <img src="imagenes/naturaleza/caminatas.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="col-md-6 p-5">
+        <h2 class="fw-bold">Caminatas Recreativas</h2>
+        <p>Disfruta de caminatas en parques y zonas naturales de Itagüí, perfectas para toda la familia. Vive momentos
+          de conexión y bienestar al aire libre.</p>
+      </div>
     </div>
+
+    <!-- 4. LUDOTECAS -->
+    <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
+      <div class="col-md-6 p-0 position-relative">
+        <img src="imagenes/naturaleza/ludotecas.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+      </div>
+      <div class="col-md-6 p-5">
+        <h2 class="fw-bold">Ludotecas</h2>
+        <p>Lleva a tus hijos a las ludotecas ubicadas en parques y centros comerciales, donde podrán disfrutar de
+          actividades recreativas en entornos seguros y educativos.</p>
+      </div>
     </div>
+
+    <div class="d-flex justify-content-center">
+      <a href="#" id="verma" class="btn" style="width: fit-content; padding-inline: 3rem;">Ver más</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <h6>REDES SOCIALES</h6>
+
+      <div class="d-flex justify-content-center align-items-center mb-3 redes">
+        <img src="imagenes/general/facebook.png" alt="facebook" width="30" height="30">
+        <img src="imagenes/general/youtube.png" alt="youtube" width="40" height="40">
+        <img src="imagenes/general/twitter.png" alt="twitter" width="25" height="25">
+        <img src="imagenes/general/instagram.png" alt="instagram" width="30" height="30">
+        <img src="imagenes/general/linkedin.png" alt="linkedin" width="34" height="34">
+      </div>
+
+      <div class="d-flex flex-row justify-content-center">
+        <div id="infos">
+          <div class="text-start" style="max-width: 600px;">
+            <p>• <strong>Teléfono: </strong> (+57) 604 373 7676</p>
+            <p>• <strong>Línea Telefónica Gratuita: </strong> 01 8000 51 8225</p>
+            <p>• <strong>Línea Anticorrupción: </strong> (+57) 604 373 7676</p>
+            <br>
+            <p><strong>Correo Electrónico:</strong> contactenos@itagui.gov.co</p>
+            <p><strong>Correo de Notificaciones Judiciales:</strong> notificaciones@itagui.gov.co</p>
+            <p><strong>NIT:</strong> 890.980093-8</p>
+          </div>
+          <div id="colabs">
+            <img id="colab1" src="imagenes/general/logo-alcaldia-blanco.png" alt="" width="130">
+            <img id="colab2" src="imagenes/general/LogoWhite.png" alt="" width="110">
+          </div>
+        </div>
+      </div>
+
+      <hr class="linea">
+      <p>© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
