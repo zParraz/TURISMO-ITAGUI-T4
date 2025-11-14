@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="General.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Aquí puedes enlazar el archivo CSS -->
   <link rel="" href="">
@@ -19,49 +20,29 @@
 
 <body>
   <a name="top"></a>
-  <style>
-    .input {
-      position: relative;
-      left: -2.5rem;
-    }
 
-    .input::placeholder {
-      color: white;
-    }
-
-    .btn {
-      position: relative;
-      right: -2.5rem;
-    }
-  </style>
+  <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="Naturaleza.Html">Gastronomía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <img id="logomenu" class="p-2" src="imagenes/general/LogoWhite.png" alt="" width="100">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Turismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="ALOJAMIENTO.html">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Somos</a></li>
+        </ul>
+      </div>
+      <img id="logo" class="p-3" src="imagenes/general/LogoWhite.png" alt="" width="100">
+    </div>
+  </nav>
   <section class=" restaurantes d-flex flex-column gap-4 align-items-center">
 
-    <div class="barra-navegacion d-flex justify-content-center">
-      <nav class="container-fluid p-1 nav justify-content-center d-flex mb-5 mt-2 z-3 position-fixed"
-        style="gap: 25rem; position: fixed; background-color: rgba(4, 118, 184, 0.8); top: -0.5rem; backdrop-filter: blur(8px);">
-        <a class="nav-link text-light rounded-4" id="nav1""
-          href="">ALOJAMIENTO</a>
-        <a class=" nav-link text-light rounded-4" id="nav2""
-          href="">NOTICIAS</a>
-        <a class=" nav-link text-light rounded-4" id="nav3""
-          href="">CONTÁCTENOS</a>
-      </nav>
-    </div>
-    <div class=" d-flex justify-content-center">
-          <h2>Restaurante</h2> <!--Titulo-->
-    </div>
-    <div class="barra-busqueda d-flex justify-content-center">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid rounded-5"
-          style="padding: 0.5rem; padding-inline: 3rem; background-image: linear-gradient(to right, rgb(0, 120, 220), rgb(88, 178, 254));">
-          <form class="d-flex" role="search">
-            <input class="input form-control me-2 border-0" style="background-color:transparent; width: 500px; "
-              type="search" placeholder="Buscar" aria-label="Search" />
-            <button class="btn border-0" type="submit"><img src="IMAGENES GENERAL/search.png" alt=""
-                width="25"></button>
-          </form>
-        </div>
-    </div>
+
 
     <!-- RESTAURANTES DESTACADOS -->
     <!-- Esta sección muestra los restaurantes más conocidos o recomendados. -->
@@ -70,153 +51,155 @@
    con su imagen, nombre, horario, descripción y contacto. -->
 
     <!--IMAGENES EN LA CARPETA RESTAURANTE-->
-    <section class="d-flex flex-column gap-4">
-      <div>
-        <a href="GASTRONOMIA.HTML" class="boton"> <img src="IMAGENES RESTAURANTE/left-arrow.png"
-            class="rounded-circle p-1 bg-warning" alt="" width="50"> </a>
-        <!--Este boton de forma circulo que tiene una flecha pero no sé... este boton se devuelve a la pagina gastronomia-->
-      </div>
-      <article class="col-12 z-0 gap-5 d-flex flex-row align-items-start justify-content-center">
-        <div class="card" style="width: 32rem; max-width: 1000px;">
-          <!--Container 1: LISBON RESTOBAR -->
-          <img src="IMAGENES RESTAURANTE/Lisbon.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lisbon Restobar</h5>
-            <section class="collapser">
-              <article class="d-flex gap-1 align-items-center">
-                <button class="container-fluid bg-primary border-0 rounded-4 text-light" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                  aria-controls="collapseExample">
-                  <img src="IMAGENES RESTAURANTE/gesture.png" alt="" width="30">
-                </button>
-              </article>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body border-0">
-                  <p>
-                    <strong>Acerca de:</strong><br>
-                    Queremos llevar la comida rápida artesanal de calidad a todas partes,
-                    romper estereotipos y cocinar con pasión, sin pretensiones.
-                  </p>
-                  <article class="d-flex flex-column gap-2">
-                    <div>
-                      <h3>★★★★★</h3>
-                      <h5>5,0 Estrellas</h5>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <img src="IMAGENES RESTAURANTE/telefonoico.png" alt="" width="25">
-                      +57 313 6264892
-                    </div>
-                    <article class="">
-                      <a href="https://maps.app.goo.gl/LN41ThziZhaRKx7p8"
-                        class="bg-primary p-2 rounded-4 d-flex justify-content-center"><img
-                          src="IMAGENES RESTAURANTE/ubicacion.png" alt="" width="25"></a>
-                    </article>
-                  </article>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="card" style="width: 32rem; max-width: 1000px;">
-          <!-- Container2: MIS ALITAS MALL 77-->
-          <img src="IMAGENES RESTAURANTE/alitaas.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mis Alitas Mall 77</h5>
-            <section class="collapser">
-              <article class="d-flex gap-1 align-items-center">
-                <button class="container-fluid bg-primary border-0 rounded-4 text-light" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
-                  aria-controls="collapseExample">
-                  <img src="IMAGENES RESTAURANTE/gesture.png" alt="" width="30">
-                </button>
-              </article>
-              <div class="collapse" id="collapseExample2">
-                <div class="card card-body border-0">
-                  <p>
-                    <strong>Acerca de:</strong><br>
-                    Somos únicos en sabores y en variedad. Ofrecemos alitas con tocineta,
-                    con queso gratinado, BBQ, miel mostaza, tamarindo picante, maracuyá picante,
-                    panela picante y muchas más combinaciones.
-                    También tenemos nuestras alitas especiales “Alitas Borrachas, Medellín, Envigado, Itagu, Sabaneta,
-                    La estrella.
-                  </p>
-                  <article class="d-flex flex-column gap-2">
-                    <div>
-                      <h3>★★★★☆</h3>
-                      <h5>4,7 Estrellas</h5>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <img src="IMAGENES RESTAURANTE/telefonoico.png" alt="" width="25">
-                      +57 301 4359875
-                    </div>
-                    <article class="">
-                      <a href="https://maps.app.goo.gl/xQ6L6iffyZKyqtqE8"
-                        class="bg-primary p-2 rounded-4 d-flex justify-content-center"><img
-                          src="IMAGENES RESTAURANTE/ubicacion.png" alt="" width="25"></a>
-                    </article>
-                  </article>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="card" style="width: 32rem; max-width: 1000px;">
-          <!-- Container 3: Steak House Másfinca-->
+    <section class="container py-5 d-flex flex-column gap-4">
 
-          <img src="IMAGENES RESTAURANTE/House.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Steak House Másfinca</h5>
-            <section class="collapser">
-              <article class="d-flex gap-1 align-items-center">
-                <button class="container-fluid bg-primary border-0 rounded-4 text-light" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
-                  aria-controls="collapseExample">
-                  <img src="IMAGENES RESTAURANTE/gesture.png" alt="" width="30">
-                </button>
-              </article>
-              <div class="collapse" id="collapseExample3">
-                <div class="card card-body border-0">
-                  <p>
-                    <strong>Acerca de:</strong><br>
-                    MásFinca Steak House, es un espacio especializado para los amantes de la carne,
-                    donde encontrarás los inigualables sabores del Angus y Brangus, acompañados de vinos,
-                    cervezas y las mejores bebidas, logrando así una experiencia única y diferenciadora.
-                    Nuestra misión principal es ofrecer a nuestros clientes productos cárnicos con la calidad,
-                    diversidad y servicio que nos diferencia. ¡Calidad desde el origen con el sabor de lo natural!
-                  </p>
-                  <article class="d-flex flex-column gap-2">
-                    <div>
-                      <h3>★★★★☆</h3>
-                      <h5>4,3 Estrellas</h5>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <img src="IMAGENES RESTAURANTE/telefonoico.png" alt="" width="25">
-                      +57 313 6264892
-                    </div>
-                    <article class="">
-                      <a href="https://maps.app.goo.gl/S46nr9i5XnDxLLZG6"
-                        class="bg-primary p-2 rounded-4 d-flex justify-content-center"><img
-                          src="IMAGENES RESTAURANTE/ubicacion.png" alt="" width="25"></a>
-                    </article>
-                  </article>
+      <!-- Botón regresar -->
+      <div>
+        <a href="GASTRONOMIA.HTML">
+          <img src="IMAGENES RESTAURANTE/left-arrow.png" class="rounded-circle p-2 bg-warning shadow" alt="Volver"
+            width="55">
+        </a>
+      </div>
+
+      <!-- CONTENEDOR DE CARDS -->
+      <article class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+        <!-- CARD 1 -->
+        <div class="col">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden" style="background-color: rgb(0,120,220,0.85);">
+
+            <img src="IMAGENES RESTAURANTE/Lisbon.jpg" class="card-img-top" alt="Lisbon Restobar">
+
+            <div class="card-body text-white">
+              <h4 class="fw-bold text-center">Lisbon Restobar</h4>
+
+              <!-- Botón de desplegar -->
+              <button class="w-100 bg-light border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
+                data-bs-target="#collapseLisbon">
+
+                <img src="IMAGENES RESTAURANTE/gesture.png" width="28">
+              </button>
+
+              <!-- Contenido oculto -->
+              <div class="collapse text-white" id="collapseLisbon">
+                <p class="mt-2">
+                  <strong>Acerca de:</strong><br>
+                  Queremos llevar comida rápida artesanal de calidad a todas partes,
+                  romper estereotipos y cocinar con pasión.
+                </p>
+
+                <div class="mt-3">
+                  <h3>★★★★★</h3>
+                  <h6>5.0 Estrellas</h6>
                 </div>
+
+                <p class="mt-2 d-flex gap-2 align-items-center">
+                  <img src="IMAGENES RESTAURANTE/telefonoico.png" width="22">
+                  +57 313 6264892
+                </p>
+
+                <a href="https://maps.app.goo.gl/LN41ThziZhaRKx7p8" class="bg-light rounded-4 p-2 d-inline-flex">
+                  <img src="IMAGENES RESTAURANTE/ubicacion.png" width="25">
+                </a>
+
               </div>
-            </section>
+            </div>
           </div>
         </div>
+
+        <!-- CARD 2 -->
+        <div class="col">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden" style="background-color: rgb(0,120,220,0.85);">
+
+            <img src="IMAGENES RESTAURANTE/alitaas.jpg" class="card-img-top" alt="Mis Alitas">
+
+            <div class="card-body text-white">
+              <h4 class="fw-bold text-center">Mis Alitas Mall 77</h4>
+
+              <button class="w-100 bg-light border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
+                data-bs-target="#collapseAlitas">
+                <img src="IMAGENES RESTAURANTE/gesture.png" width="28">
+              </button>
+
+              <div class="collapse" id="collapseAlitas">
+                <p class="mt-2">
+                  <strong>Acerca de:</strong><br>
+                  Somos únicos en sabores. Ofrecemos gran variedad de alitas y combinaciones especiales.
+                </p>
+
+                <div class="mt-3">
+                  <h3>★★★★☆</h3>
+                  <h6>4.7 Estrellas</h6>
+                </div>
+
+                <p class="mt-2 d-flex gap-2 align-items-center">
+                  <img src="IMAGENES RESTAURANTE/telefonoico.png" width="22">
+                  +57 301 4359875
+                </p>
+
+                <a href="https://maps.app.goo.gl/xQ6L6iffyZKyqtqE8" class="bg-light rounded-4 p-2 d-inline-flex">
+                  <img src="IMAGENES RESTAURANTE/ubicacion.png" width="25">
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col">
+          <div class="card shadow-lg border-0 rounded-4 overflow-hidden" style="background-color: rgb(0,120,220,0.85);">
+
+            <img src="IMAGENES RESTAURANTE/House.jpg" class="card-img-top" alt="Steak House Másfinca">
+
+            <div class="card-body text-white">
+              <h4 class="fw-bold text-center">Steak House Másfinca</h4>
+
+              <button class="w-100 bg-light border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
+                data-bs-target="#collapseFinca">
+                <img src="IMAGENES RESTAURANTE/gesture.png" width="28">
+              </button>
+
+              <div class="collapse" id="collapseFinca">
+
+                <p class="mt-2">
+                  <strong>Acerca de:</strong><br>
+                  Especialistas en carnes Angus y Brangus, vinos y bebidas. Experiencia gastronómica premium.
+                </p>
+
+                <div class="mt-3">
+                  <h3>★★★★☆</h3>
+                  <h6>4.3 Estrellas</h6>
+                </div>
+
+                <p class="mt-2 d-flex gap-2 align-items-center">
+                  <img src="IMAGENES RESTAURANTE/telefonoico.png" width="22">
+                  +57 313 6264892
+                </p>
+
+                <a href="https://maps.app.goo.gl/S46nr9i5XnDxLLZG6" class="bg-light rounded-4 p-2 d-inline-flex">
+                  <img src="IMAGENES RESTAURANTE/ubicacion.png" width="25">
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </article>
-      <!-- Botón para ver más -->
+
+      <!-- Botón Ver Más -->
       <div class="d-flex justify-content-center">
-        <a href="#" class="boton text-decoration-none text-light rounded-4 mb-3"
-          style="background-color: rgb(0, 120, 220); width: fit-content; padding-inline: 2rem; padding-top: 5px; padding-bottom: 5px;">Ver
-          Más ></a> <!--Este boton esta en el centro y un poquito grande osea 
-      tan pequeño pero ni tan gigante-->
+        <a href="https://www.tripadvisor.co/Restaurants-g2079011-Itagui_Antioquia_Department.html" id="verma" class="btn"
+          style="width: fit-content; padding-inline: 3rem;">Ver más</a>
       </div>
+
+
     </section>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
