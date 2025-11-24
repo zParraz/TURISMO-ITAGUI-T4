@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sancocho Antioqueño</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="general.css" />
 </head>
+
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0,120,220,.85); backdrop-filter: blur(8px);">
+
+  <!-- NAVBAR -->
+  <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Gastronomía</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold text-light" href="GASTRONOMIA.HTML">Gastronomía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <img id="logomenu" class="p-2" src="imagenes/general/LogoWhite.png" alt="" width="100">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link" href="#">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Turismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="ALOJAMIENTO.html">Alojamiento</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Somos</a></li>
         </ul>
       </div>
+      <img id="logo" class="p-3" src="imagenes/general/LogoWhite.png" alt="" width="100">
     </div>
   </nav>
 
-  <header class="position-relative mt-5">
-    <img src="IMAGENES GENERAL/concepto-de-gastronomia.webp" class="hero img-fluid" />
-
+  <!-- HERO -->
+  <header id="imagenenca" class="position-relative">
+    <img src="imagenes/general/concepto-de-gastronomia.webp" class="hero" />
     <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bold"
-      style="text-shadow: 0 0 15px black;">
-      Sancocho Antioqueño
-    </h1>
-
-    <a href="GASTRONOMIA.html"
-      class="position-absolute top-0 start-0 m-4 bg-light rounded-circle shadow d-flex justify-content-center align-items-center"
-      style="width: 55px; height: 55px;">
-      <img src="" width="30">
-    </a>
+      style="text-shadow:0 0 15px black;">Sancocho Antioqueño</h1>
   </header>
 
-  <main class="container my-4">
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container my-5 d-flex flex-column gap-5">
+
+    <!-- IMAGEN PRINCIPAL + UTENSILIOS + INGREDIENTES -->
     <div class="row g-4">
+
+      <!-- IMAGEN GRANDE CON TÍTULO -->
       <div class="col-lg-6 d-flex align-items-center">
-        <div class="position-relative text-center">
-          <img src="SASACOCHOIMGANES/sasasa.jpg" class="img-fluid rounded-4 shadow" />
-          <div class="position-absolute top-0 start-50 translate-middle-x text-light fw-bold fs-1" style="text-shadow:0 0 15px black;">SANCOCHO</div>
+        <div class="position-relative text-center w-100">
+          <img src="imagenes/imagenes gastronomia/recetasancocho/sasasa.jpg" class="img-fluid rounded-4 shadow w-100" />
+          <div class="position-absolute top-0 start-50 translate-middle-x text-light fw-bold fs-1"
+            style="text-shadow:0 0 15px black;">
+            SANCOCHO
+          </div>
         </div>
       </div>
 
+      <!-- UTENSILIOS + INGREDIENTES -->
       <div class="col-lg-6">
-        <section class="p-3 bg-white rounded-4 shadow mb-4">
+
+        <!-- UTENSILIOS -->
+        <section class="p-4 bg-white rounded-4 shadow mb-4">
           <h3 class="fs-1 mb-3">Utensilios</h3>
-          <div class="row row-cols-2 row-cols-md-3 g-2">
+
+          <div class="row row-cols-2 row-cols-md-3 g-3">
             <div class="col">Olla grande</div>
             <div class="col">Cuchillo</div>
             <div class="col">Tabla de picar</div>
@@ -59,10 +72,12 @@
           </div>
         </section>
 
-        <section class="p-3 bg-white rounded-4 shadow">
+        <!-- INGREDIENTES -->
+        <section class="p-4 bg-white rounded-4 shadow">
           <h3 class="fs-1 mb-3">Ingredientes</h3>
+
           <div class="row g-2">
-            <div class="col-12 col-md-6">
+            <div class="col-md-6">
               <ul class="list-unstyled">
                 <li>16 tazas Agua</li>
                 <li>½ libra Carne de cerdo o costilla</li>
@@ -74,7 +89,8 @@
                 <li>6 libras Papas</li>
               </ul>
             </div>
-            <div class="col-12 col-md-6">
+
+            <div class="col-md-6">
               <ul class="list-unstyled">
                 <li>75 g Arracacha</li>
                 <li>2 Zanahorias ralladas</li>
@@ -88,33 +104,86 @@
             </div>
           </div>
         </section>
+
       </div>
     </div>
-  </main>
 
-  <section class="container my-5">
-    <div class="p-4 rounded-4 text-light shadow" style="background-color: rgba(0,120,220,0.85);">
+    <!-- PREPARACIÓN -->
+    <section class="p-4 rounded-4 text-light shadow" style="background-color: rgba(0,120,220,0.85);">
       <h3 class="fs-1 mb-4">¡¡A Cocinar!!</h3>
+
       <ol class="fs-5">
-        <li class="mb-3"><strong>Paso 1:</strong> En una olla grande coloca el agua, carnes, cebolla junca, perejil, cilantro y especias.</li>
+        <li class="mb-3"><strong>Paso 1:</strong> En una olla grande coloca el agua, carnes, cebolla junca, perejil,
+          cilantro y especias.</li>
+
         <li class="mb-3"><strong>Paso 2:</strong> Hierve y cocina 45 minutos hasta que las carnes estén tiernas.</li>
+
         <li class="mb-3"><strong>Paso 3:</strong> Agrega plátanos verdes y mazorca y cocina 15 min.</li>
-        <li class="mb-3"><strong>Paso 4:</strong> Añade zanahoria, arracacha, papas, guineos, repollo y sal. Cocina 10 min.</li>
+
+        <li class="mb-3"><strong>Paso 4:</strong> Añade zanahoria, arracacha, papas, guineos, repollo y sal. Cocina 10
+          min.</li>
+
         <li class="mb-3"><strong>Paso 5:</strong> Agrega la yuca y cocina 15 min más.</li>
+
         <li class="mb-3"><strong>Paso 6:</strong> Retira cebolla junca y hierbas.</li>
+
         <li class="mb-3"><strong>Paso 7:</strong> Sirve caliente con arroz blanco, ají pique y banano maduro.</li>
       </ol>
-    </div>
-  </section>
+    </section>
 
-  <section class="container mb-5">
-    <h3 class="fs-2">Resultado</h3>
-    <div class="d-flex gap-3 mt-3">
-      <img src="SASACOCHOIMGANES/sasasa.jpg" class="img-fluid rounded-4 shadow" width="300" />
-      <img src="SASACOCHOIMGANES/cococo.jpg" class="img-fluid rounded-4 shadow" width="300" />
+    <!-- RESULTADO -->
+    <section class="container mb-5">
+      <h3 class="fs-2">Resultado</h3>
+
+      <div class="row g-4 mt-2">
+
+        <div class="col-12 col-md-6">
+          <img src="imagenes/imagenes gastronomia/recetasancocho/sasasa.jpg" class="img-fluid rounded-4 shadow w-100" />
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img src="imagenes/imagenes gastronomia/recetasancocho/cococo.jpg" class="img-fluid rounded-4 shadow w-100" />
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="text-center">
+    <div class="container">
+      <h6>REDES SOCIALES</h6>
+
+
+      <div class="d-flex justify-content-center align-items-center mb-3 redes">
+        <img src="imagenes/general/facebook.png" alt="facebook" width="30" height="30">
+        <img src="imagenes/general/youtube.png" alt="youtube" width="40" height="40">
+        <img src="imagenes/general/twitter.png" alt="twitter" width="25" height="25">
+        <img src="imagenes/general/instagram.png" alt="instagram" width="30" height="30">
+        <img src="imagenes/general/linkedin.png" alt="linkedin" width="34" height="34">
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <div id="infos">
+          <div class="text-start" style="max-width: 600px;">
+            <p>• <strong>Teléfono: </strong> (+57) 604 373 7676</p>
+            <p>• <strong>Línea Telefónica Gratuita: </strong> 01 8000 51 8225</p>
+            <p>• <strong>Línea Anticorrupción: </strong> (+57) 604 373 7676</p>
+            <br>
+            <p><strong>Correo Electrónico:</strong> contactenos@itagui.gov.co</p>
+            <p><strong>Correo de Notificaciones Judiciales:</strong> notificaciones@itagui.gov.co</p>
+            <p><strong>NIT:</strong> 890.980093-8</p>
+          </div>
+          <div id="colabs">
+            <img id="colab1" src="imagenes/general/logo-alcaldia-blanco.png" alt="" width="130">
+            <img id="colab2" src="imagenes/general/LogoWhite.png" alt="" width="110">
+          </div>
+        </div>
+      </div>
+      <hr class="linea">
+      <p class="">© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
     </div>
-  </section>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

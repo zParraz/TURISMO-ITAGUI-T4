@@ -7,32 +7,42 @@
   <title>Receta Bandeja Paisa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="general.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
-    style="background-color: rgb(0, 120, 220,0.85); backdrop-filter: blur(8px);">
+  <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="GASTRONOMIA.HTML">Gastronomía</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold text-light" href="GASTRONOMIA.HTML">Gastronomía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="nav">
+        <img id="logomenu" class="p-2" src="imagenes/general/LogoWhite.png" alt="" width="100">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link" href="#">Alojamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Turismo</a></li>
+          <li class="nav-item"><a class="nav-link" href="ALOJAMIENTO.html">Alojamiento</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Somos</a></li>
         </ul>
       </div>
+      <img id="logo" class="p-3" src="imagenes/general/LogoWhite.png" alt="" width="100">
     </div>
   </nav>
-  <!-- HEADER -->
-  <header class="text-center text-light mt-5 d-flex flex-column align-items-center justify-content-center">
-    <h1 class="display-1 fw-bold mt-5" style="color: rgb(252, 182, 47);">RECETA</h1>
-    <img src="Bpaisaimagenes/down-arrow.png" alt="" width="100">
+
+  <!-- HERO -->
+  <header id="imagenenca" class="position-relative">
+    <img src="imagenes/general/concepto-de-gastronomia.webp" class="hero" />
+    <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bold"
+      style="text-shadow:0 0 15px black;">Bandeja Paisa</h1>
   </header>
+
+  <!-- SEARCH BAR -->
+  <div id="busqueda" class="search-bar shadow mt-3" style="background-color: rgb(0, 120, 220);">
+    <input type="text" placeholder="Buscar" />
+    <button><i class="bi bi-search"></i></button>
+  </div>
 
   <!-- TÍTULO + BOTÓN VOLVER -->
   <!-- IMAGEN + UTENSILIOS + INGREDIENTES -->
@@ -41,7 +51,8 @@
       <!-- IMAGEN -->
       <div class="col-lg-6 d-flex align-items-center">
         <div class="position-relative text-center">
-          <img src="Bpaisaimagenes/bandeja-paisa-5321840.jpg" class="img-fluid rounded-4 shadow" />
+          <img src="imagenes/imagenes gastronomia/recetabandejapaisa/bandeja-paisa-5321840.jpg"
+            class="img-fluid rounded-4 shadow" />
           <div class="position-absolute top-0 start-50 translate-middle-x text-light fw-bold fs-1"
             style="text-shadow:0 0 15px black;">
             BANDEJA PAISA
@@ -103,18 +114,83 @@
     <div class="p-4 rounded-4 text-light shadow" style="background-color: rgba(0,120,220,0.85);">
       <h3 class="fs-1 mb-4">¡¡A Cocinar!!</h3>
       <ol class="fs-5">
-        <li class="mb-3"><strong>PASO 1:</strong> Prepara los fríjoles...</li>
-        <li class="mb-3"><strong>PASO 2:</strong> Agrega el agua...</li>
-        <li class="mb-3"><strong>PASO 3:</strong> Licúa la zanahoria...</li>
-        <li class="mb-3"><strong>PASO 4:</strong> Espesa los fríjoles...</li>
-        <li class="mb-3"><strong>PASO 5:</strong> Prepara la carne molida...</li>
-        <li class="mb-3"><strong>PASO 6:</strong> Prepara los chicharrones...</li>
-        <li class="mb-3"><strong>PASO 7:</strong> Prepara los chorizos...</li>
-        <li class="mb-3"><strong>PASO 8:</strong> Prepara las arepas...</li>
-        <li class="mb-3"><strong>PASO 9:</strong> Sirve y disfruta...</li>
+        <li class="mb-3"><strong>Prepara los fríjoles:</strong> <br>Calienta en una olla a presión una cucharada de
+          aceite por 3 minutos a fuego medio; añade la cebolla, el tomate y el sobre de <b>CALDO CON COSTILLA MAGGI
+            DESMENUZADO</b> y revuelve para integrar bien, finalmente cocina por 2 minutos o hasta que el tomate suelte
+          sus jugos.</li>
+        <li class="mb-3"><strong>Agrega el agua:</strong> <br>Adiciona las tres tazas de agua, los fríjoles y la
+          zanahoria entera. Tapa la olla y cocina por 30 minutos.</li>
+        <li class="mb-3"><strong>Licúa la zanahoria:</strong> <br>Pasado el tiempo de cocción retira la olla del fuego,
+          sácale el aire con cuidado antes de destapar. Saca la zanahoria y licúala con el caldo de los fríjoles.</li>
+        <li class="mb-3"><strong>Espesa los fríjoles:</strong> <br>Agrega el licuado a la olla nuevamente para espesar,
+          lleva a fuego bajo y revuelve de vez en cuando.</li>
+        <li class="mb-3"><strong>Prepara la carne molida:</strong> <br>Calienta en una sartén el aceite restante por 3
+          minutos a fuego medio. Agrega la carne y con una cuchara revuelve, deja cocinar por 10 minutos o hasta que
+          esté bien cocinada.</li>
+        <li class="mb-3"><strong>Prepara los chicharrones:</strong> <br>En una olla de fondo alto agrega 2 tazas de agua
+          y el tocino cortado en trozos; tapa la olla y lleva al fuego medio por 20 minutos o hasta que el tocino esté
+          bien cocinado y crocante. Retira del fuego y déjalos en papel absorbente para retirar el exceso de grasa.</li>
+        <li class="mb-3"><strong>Prepara los chorizos:</strong> <br>En una sartén pequeña adiciona dos cucharadas de
+          agua y los chorizos. Lleva al fuego medio hasta que los chorizos estén bien dorados</li>
+        <li class="mb-3"><strong>Prepara las arepas:</strong> <br>En una parrilla o sartén a fuego medio debes poner las
+          arepas y dorar por ambos lados.</li>
+        <li class="mb-3"><strong>Sirve y disfruta:</strong> <br>En 4 bandejas o platos sirve arroz, fríjoles, carne
+          molida, chicharrón, chorizo, huevo, aguacate, arepa y 1 tajada de plátano maduro, todo en porciones iguales.
+        </li>
       </ol>
     </div>
   </section>
+
+  <!-- RESULTADO -->
+  <section class="container mb-5">
+    <h3 class="fs-2">Resultado</h3>
+
+    <div class="row g-4 mt-2">
+
+      <div class="col-12 col-md-6">
+        <img src="imagenes/imagenes gastronomia/recetabandejapaisa/bpaisa1.jpg" class="img-fluid rounded-4 shadow w-100" />
+      </div>
+
+      <div class="col-12 col-md-6">
+        <img src="imagenes/imagenes gastronomia/recetabandejapaisa/bpaisa2.jpg" class="img-fluid rounded-4 shadow w-100" />
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <h6>REDES SOCIALES</h6>
+
+
+      <div class="d-flex justify-content-center align-items-center mb-3 redes">
+        <img src="imagenes/general/facebook.png" alt="facebook" width="30" height="30">
+        <img src="imagenes/general/youtube.png" alt="youtube" width="40" height="40">
+        <img src="imagenes/general/twitter.png" alt="twitter" width="25" height="25">
+        <img src="imagenes/general/instagram.png" alt="instagram" width="30" height="30">
+        <img src="imagenes/general/linkedin.png" alt="linkedin" width="34" height="34">
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <div id="infos">
+          <div class="text-start" style="max-width: 600px;">
+            <p>• <strong>Teléfono: </strong> (+57) 604 373 7676</p>
+            <p>• <strong>Línea Telefónica Gratuita: </strong> 01 8000 51 8225</p>
+            <p>• <strong>Línea Anticorrupción: </strong> (+57) 604 373 7676</p>
+            <br>
+            <p><strong>Correo Electrónico:</strong> contactenos@itagui.gov.co</p>
+            <p><strong>Correo de Notificaciones Judiciales:</strong> notificaciones@itagui.gov.co</p>
+            <p><strong>NIT:</strong> 890.980093-8</p>
+          </div>
+          <div id="colabs">
+            <img id="colab1" src="imagenes/general/logo-alcaldia-blanco.png" alt="" width="130">
+            <img id="colab2" src="imagenes/general/LogoWhite.png" alt="" width="110">
+          </div>
+        </div>
+      </div>
+      <hr class="linea">
+      <p class="">© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>

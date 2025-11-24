@@ -12,6 +12,10 @@ input::placeholder {
     color: white;
 }
 
+#imagenenca {
+    margin-top: 5.5rem;
+}
+
 #hoteles {
     display: flex;
     flex-direction: row;
@@ -97,6 +101,15 @@ input::placeholder {
     overflow: hidden;
 }
 
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px) !important;
+    transition: all 500ms;
+}
+
 footer {
     background-color: rgba(0, 120, 220, 0.85);
     color: white;
@@ -175,6 +188,13 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+#desplegar {
+    background-color: rgba(252, 182, 47, 0.85);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .section-title {
     color: #0078dc;
     border-bottom: 3px solid #0078dc;
@@ -191,6 +211,7 @@ body {
 #verma {
     background-color: rgba(252, 182, 47, 0.85);
     color: white;
+    border-radius: 10rem;
 }
 
 #verma:hover {
@@ -201,11 +222,20 @@ body {
     box-shadow: 2px 2px 15px rgba(252, 182, 47, 0.85);
 }
 
-@media (max-width:1920px) {
-    #logomenu {
-        display: none;
-    }
+#verma2:hover {
+    transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    background-color: rgba(252, 182, 47, 0.85);
+    backdrop-filter: blur(3px);
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(252, 182, 47, 0.85);
+    border-radius: 100rem;
 }
+
+#logomenu {
+    display: none;
+}
+
+@media (max-width:1920px) {}
 
 @media (max-width: 1097.14px) {
     #imagen {
@@ -225,6 +255,14 @@ body {
     #margin {
         margin-top: 3.5rem;
     }
+
+    #logo {
+        display: none;
+    }
+
+    #imagenenca {
+        margin-top: 3.5rem;
+    }
 }
 
 @media (max-width: 896px) {
@@ -235,19 +273,20 @@ body {
     #logomenu {
         display: flex;
     }
+
     .search-bar {
         width: 70%;
-    top: 0.5rem !important;
+        top: 0.5rem !important;
+    }
+
+    #imagenenca {
+        margin-top: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
     #imagen {
         width: 764px;
-    }
-
-    #margin {
-        margin-top: 3.5rem;
     }
 
     .search-bar {
@@ -258,7 +297,7 @@ body {
 @media (max-width: 414px) {
     .search-bar {
         width: 80%;
-        top: 0.5rem !important; 
+        top: 0.5rem !important;
     }
 
     .hero {
@@ -272,6 +311,10 @@ body {
 
     #colab2 {
         width: 80px;
+    }
+
+    #imagenenca {
+        margin-top: 3rem;
     }
 
     #infos {
@@ -289,6 +332,10 @@ body {
         border-left: none;
         padding-inline-start: 0;
 
+    }
+
+    #Resultados {
+        width: 300px;
     }
 
     #imagen {
