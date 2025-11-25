@@ -1,0 +1,346 @@
+* {
+    transition: all 500ms;
+    font-family: Arial, sans-serif;
+}
+
+#barranav {
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+input::placeholder {
+    color: white;
+}
+
+#hoteles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search bar */
+.search-bar {
+    background-color: #007bff;
+    width: 60%;
+    margin: -30px auto 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.hotel-card {
+    background-color: rgba(0, 120, 220, 0.85);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: scale(1.05);
+}
+
+.hotel-card img {
+    border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.arrow-btn {
+    background-color: #ffc107;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.arrow-btn:hover {
+    background-color: #ffca2c;
+}
+
+.hero {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.section-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+footer {
+    background-color: rgba(0, 120, 220, 0.85);
+    color: white;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 20px;
+}
+
+footer h6 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.redes img {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.linea {
+    border: 0;
+    height: 1px;
+    background: white;
+    margin-top: 20px;
+}
+
+#infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#colabs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 3rem;
+    border-left: 1px solid;
+    border-color: #d9d9d965;
+}
+
+#boton {
+    background-color: rgb(0, 120, 220);
+}
+
+#boton:hover {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+#logocontain {
+    background-color: rgba(0, 120, 220, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: #0078dc;
+    border-bottom: 3px solid #0078dc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#location:hover {
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(0, 120, 220, 0.85);
+    backdrop-filter: blur(3px);
+}
+
+#verma {
+    background-color: rgba(252, 182, 47, 0.85);
+    color: white;
+}
+
+#verma:hover {
+    transition: background-color 200ms ease-in-out, color 0.5s ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    background-color: rgba(252, 182, 47, 0.85);
+    backdrop-filter: blur(3px);
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px rgba(252, 182, 47, 0.85);
+}
+
+@media (max-width:1920px) {
+    #logomenu {
+        display: none;
+    }
+}
+
+@media (max-width: 1097.14px) {
+    #imagen {
+        width: 1700px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 960px) {
+    #imagen {
+        width: 953px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 896px) {
+    #logo {
+        display: none;
+    }
+
+    #logomenu {
+        display: flex;
+    }
+    .search-bar {
+        width: 70%;
+    top: 0.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #imagen {
+        width: 764px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+}
+
+@media (max-width: 414px) {
+    .search-bar {
+        width: 80%;
+        top: 0.5rem !important; 
+    }
+
+    .hero {
+        object-fit: cover;
+        height: 20vh;
+    }
+
+    #colab1 {
+        width: 100px;
+    }
+
+    #colab2 {
+        width: 80px;
+    }
+
+    #infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #colabs {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: end;
+        justify-content: center;
+        border-left: none;
+        padding-inline-start: 0;
+
+    }
+
+    #imagen {
+        width: 440px;
+    }
+
+    #margin {
+        margin-top: 3.5rem;
+    }
+
+    footer {
+        transform: scaleY(1);
+    }
+
+    #logo {
+        width: 100px;
+
+    }
+
+    #logocontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menucontain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logomenu {
+        display: flex;
+    }
+
+    #barranav {
+        background-color: rgba(0, 120, 220);
+    }
+
+    #hoteles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#busqueda {
+    background-color: rgb(0, 120, 220, 0.85) !important;
+}
+
