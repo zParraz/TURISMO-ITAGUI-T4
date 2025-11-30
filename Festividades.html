@@ -2,18 +2,23 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITAVIVA</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitios</title>
     <link rel="stylesheet" href="General.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+
+    </style>
 </head>
 
-<body>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
     <nav id="barranav" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-light" href="Index.html">Itagüí</a>
+            <a class="navbar-brand fw-bold text-light" href="culturayarte.html">Arte y Cultura</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,11 +35,12 @@
             <img id="logo" class="p-3" src="imagenes/general/LogoWhite.png" alt="" width="100">
         </div>
     </nav>
+
     <!-- HERO -->
     <header class="position-relative mt-5">
-        <img src="imagenes/general/Portada.jpg" class="hero" />
+        <img src="imagenes/arte y cultura/fiesta-de-la-pereza-p_45848249_20240818181546.webp" class="hero" />
         <h1 class="position-absolute top-50 start-50 translate-middle text-white display-3 fw-bold"
-            style="text-shadow:0 0 15px black;">Naturaleza</h1>
+            style="text-shadow:0 0 15px black;">Festividades</h1>
     </header>
 
     <!-- SEARCH BAR -->
@@ -42,52 +48,66 @@
         <input type="text" placeholder="Buscar" />
         <button><i class="bi bi-search"></i></button>
     </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5 d-flex flex-column gap-5">
 
-    <!-- Contenido descriptivo -->
-    <section class="container text-center my-5">
-        <p class="fs-5 text-muted">
-            Itagüí ofrece diversas opciones de turismo de naturaleza, incluyendo parques naturales, senderos ecológicos
-            y áreas de conservación. Los visitantes pueden disfrutar de actividades al aire libre como caminatas,
-            observación de aves y paseos en bicicleta, mientras exploran la rica biodiversidad de la región.
-        </p>
-    </section>
-
-    <!-- Sección de imágenes tipo tarjetas -->
-    <section class="container my-5">
-        <div class="row g-4">
-
-            <!-- Sitios -->
-            <div class="col-md-6">
-                <a class="text-decoration-none text-light" href="NATURALEZA _SITIOS.html">
-                    <div class="card border-0 card-hover shadow-sm">
-                        <img src="imagenes/naturaleza/477195897_988786986644986_8990792790551071098_n_redimensionada.jpg"
-                            class="card-img" alt="Sitios Naturales">
-                        <div
-                            class="card-img-overlay d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-                            <h3 class="text-white fw-bold">
-                                Sitios
-                            </h3>
-                        </div>
-                </a>
+        <!-- 1. Fiestas de la Industria, el Comercio y la Cultura (IZQUIERDA) -->
+        <div class="row align-items-center bg-white shadow section-card p-0">
+            <div class="col-md-6 p-0 position-relative">
+                <img src="imagenes/arte y cultura/2-Fiestas-de-la-Industria-el-Comercio-y-la-Cultura-1.webp"
+                    class="img-fluid w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bold">Fiestas de la Industria, el Comercio y la Cultura</h2>
+                <p>Las tradicionales fiestas de Itagüí reúnen música,
+                    arte y gastronomía con una amplia programación
+                    cultural y participación de miles de visitantes.</p>
             </div>
         </div>
 
-        <!-- Actividades -->
-        <div class="col-md-6">
-            <a class="text-decoration-none text-light" href="NATURALEZA_ACTIVIDADES.html">
-                <div class="card border-0 card-hover shadow-sm">
-                    <img src="imagenes/naturaleza/senderismo.jpg" class="card-img" alt="Actividades en la Naturaleza">
-                    <div
-                        class="card-img-overlay d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-                        <h3 class="text-white fw-bold">Actividades</h3>
-                    </div>
-            </a>
-        </div>
+        <!-- 2. Festival Internacional de Tango de Itagüí (DERECHA) -->
+        <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
+            <div class="col-md-6 p-0 position-relative">
+                <img src="imagenes/arte y cultura/2-60.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bold">Festival Internacional de Tango de Itagüí</h2>
+                <p>Evento que celebra el tango con shows, concursos y
+                    agrupaciones locales e internacionales, llenando la
+                    ciudad de arte, danza y tradición musical.</p>
+            </div>
         </div>
 
+        <!-- 3. Semana de la Juventud de Itagüí (IZQUIERDA) -->
+        <div class="row align-items-center bg-white shadow section-card p-0">
+            <div class="col-md-6 p-0 position-relative">
+                <img src="imagenes/arte y cultura/jóvenes.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bold">Semana de la Juventud de Itagüí</h2>
+                <p>Una celebración dedicada a los jóvenes con deporte,
+                    música urbana, emprendimiento, foros culturales y
+                    actividades formativas en toda la ciudad.</p>
+            </div>
         </div>
-    </section>
-    <!-- FOOTER -->
+
+        <!-- 4. Festival de Luces y Alumbrados Navideños (DERECHA) -->
+        <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
+            <div class="col-md-6 p-0 position-relative">
+                <img src="imagenes/arte y cultura/llega-la-temporada-decembrina-de-alumbrados-navidenos.png"
+                    class="img-fluid w-100 h-100 object-fit-cover" />
+
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="fw-bold">Festival de Luces y Alumbrados Navideños</h2>
+                <p>Cada diciembre Itagüí se ilumina con figuras, shows
+                    familiares y recorridos que convierten la ciudad en un
+                    destino turístico navideño imperdible.</p>
+            </div>
+        </div>
+    </main>
+
     <footer class="text-center">
         <div class="container">
             <h6>REDES SOCIALES</h6>
@@ -119,7 +139,11 @@
             <p class="">© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

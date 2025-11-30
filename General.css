@@ -3,6 +3,17 @@
     font-family: Arial, sans-serif;
 }
 
+.hero2 {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#fondo {
+    background-image: url(imagenes/general/Panoramica_Itagüí.jpg);
+}
+
 #barranav {
     background-color: rgba(0, 120, 220, 0.85);
     backdrop-filter: blur(8px);
@@ -93,7 +104,7 @@ input::placeholder {
     height: 55vh;
     width: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(100%);
 }
 
 .section-card {
@@ -117,6 +128,9 @@ footer {
     border-top-right-radius: 80px;
     padding: 20px;
 }
+
+
+
 
 footer h6 {
     font-weight: bold;
@@ -173,7 +187,7 @@ footer p {
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: white;
 }
 
 #logocontain {
@@ -231,6 +245,8 @@ body {
     border-radius: 100rem;
 }
 
+
+
 #logomenu {
     display: none;
 }
@@ -244,6 +260,10 @@ body {
 
     #margin {
         margin-top: 3.5rem;
+    }
+
+    #arte {
+        text-align: center;
     }
 }
 
@@ -295,6 +315,18 @@ body {
 }
 
 @media (max-width: 414px) {
+    #contact {
+        margin-top: 0rem;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
     .search-bar {
         width: 80%;
         top: 0.5rem !important;
@@ -303,6 +335,10 @@ body {
     .hero {
         object-fit: cover;
         height: 20vh;
+    }
+
+    .hero2 {
+        height: 30vh !important;
     }
 
     #colab1 {
@@ -385,6 +421,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 #busqueda {
