@@ -3,8 +3,8 @@
     font-family: Arial, sans-serif;
 }
 
-.hero2 {
-    height: 100vh;
+#hero2 {
+    height: 60vh;
     width: 100%;
     object-fit: cover;
     filter: brightness(50%);
@@ -302,6 +302,18 @@ body {
     #imagenenca {
         margin-top: 3.5rem;
     }
+
+    .hero {
+        object-fit: cover;
+        height: 80vh;
+    }
+
+    #hero2 {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -334,10 +346,10 @@ body {
 
     .hero {
         object-fit: cover;
-        height: 20vh;
+        height: 30vh;
     }
 
-    .hero2 {
+    #hero2 {
         height: 30vh !important;
     }
 
