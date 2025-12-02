@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="General.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
 
     </style>
@@ -51,55 +53,49 @@
     <main class="container my-5 d-flex flex-column gap-5">
 
         <!-- 1. Casa Museo Ditaires (IZQUIERDA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/arte y cultura/Convenciones_Ditaires.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
-                <a id="location"
-                    class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;" href="Casamuseoditaires.html"><img
-                        src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Casa Museo Ditaires</h2>
                 <p>Espacio que conserva la memoria histórica de Itagüí,
                     con exposiciones, archivos y objetos patrimoniales que
                     permiten conocer la evolución cultural del municipio.</p>
             </div>
+            <div class="col-md-4" id="map" style="width: 344px; height: 330px;">
+            </div>
         </div>
 
         <!-- 2. Teatro Municipal de Itagüí (DERECHA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5 flex-md-row-reverse">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/arte y cultura/teatro-caribe-itagui-11.jpeg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
-                <a id="location"
-                    class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;" href="Centroculturalcaribe.html"><img
-                        src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Centro Cultural Caribe</h2>
                 <p>Escenario donde se presentan obras locales, cine,
                     conciertos y eventos culturales que fortalecen la
                     vida artística del municipio durante todo el año.</p>
             </div>
+            <div class="col-md-4" id="map2" style="width: 344px; height: 293px;"></div>
+
         </div>
 
         <!-- 3. LA MONTAÑA QUE PIENSA (IZQUIERDA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/477195897_988786986644986_8990792790551071098_n_redimensionada.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
-                <a id="location"
-                    class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;" href="Montañaquepiensa.html"><img
-                        src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">La Montaña que Piensa</h2>
                 <p>Un mirador con espectaculares vistas de Itagüí y Medellín, además de arte urbano y espacios
                     culturales.</p>
+            </div>
+            <div class="col-md-4" id="map3" style="width: 344px; height: 293px;">
             </div>
         </div>
     </main>
@@ -135,11 +131,59 @@
             <p class="">© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
         </div>
     </footer>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map = L.map('map').setView([6.168543411490724, -75.62830911234356], 19); // ejemplo: Madrid
 
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-</html>
+        // Marcador de ejemplo con popup
+        L.marker([6.168543411490724, -75.62830911234356]).addTo(map)
+            .bindPopup('Casa Museo Ditaires')
+            .openPopup();
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        // Añade control de escala
+        L.control.scale().addTo(map);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map2 = L.map('map2').setView([6.172933844931196, -75.60761942359889], 19); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map2);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.172933844931196, -75.60761942359889]).addTo(map2)
+            .bindPopup('Centro Cultural Caribe.')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map2);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map3 = L.map('map3').setView([6.195301257006107, -75.61889002353229], 19); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map3);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.195301257006107, -75.61889002353229]).addTo(map3)
+            .bindPopup('La Montaña que piensa')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map3);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -9,9 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Aquí puedes enlazar el archivo CSS -->
-  <link rel="" href="">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 
 
@@ -72,15 +71,9 @@
             <div class="card-body text-white">
               <h4 class="fw-bold text-center">Lisbon Restobar</h4>
 
-              <!-- Botón de desplegar -->
-              <button id="desplegar" class="w-100 border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
-                data-bs-target="#collapseLisbon">
-
-                <img src="imagenes/imagenes restaurante/gesture.png" width="28">
-              </button>
-
+              
               <!-- Contenido oculto -->
-              <div class="collapse text-white" id="collapseLisbon">
+              <div class=" text-white" id="collapseLisbon">
                 <p class="mt-2">
                   <strong>Acerca de:</strong><br>
                   Queremos llevar comida rápida artesanal de calidad a todas partes y
@@ -96,19 +89,13 @@
                   <img src="imagenes/imagenes restaurante/telefonoico.png" width="22">
                   +57 313 6264892
                 </p>
-
-                <div class="d-flex justify-content-center">
-                  <a href="lisbonrestobar.html"
-                    class="justify-content-center rounded-4 p-2 d-inline-flex">
-                    <img src="imagenes/general/location2.png" width="50">
-                  </a>
+                <div class="rounded-4 shadow" id="map" style="width: 380px; height: 300px">
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
+        
         <!-- CARD 2 -->
         <div class="col">
           <div class="card shadow-lg border-0 rounded-4 overflow-hidden" style="background-color: rgb(0,120,220,0.85);">
@@ -118,12 +105,9 @@
             <div class="card-body text-white">
               <h4 class="fw-bold text-center">Mis Alitas Mall 77</h4>
 
-              <button id="desplegar" class="w-100 border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
-                data-bs-target="#collapseAlitas">
-                <img src="imagenes/imagenes restaurante/gesture.png" width="28">
-              </button>
+              
 
-              <div class="collapse" id="collapseAlitas">
+              <div class="" id="collapseAlitas">
                 <p class="mt-2">
                   <strong>Acerca de:</strong><br>
                   Somos únicos en sabores. Ofrecemos gran variedad de alitas y combinaciones especiales.
@@ -138,19 +122,12 @@
                   <img src="imagenes/imagenes restaurante/telefonoico.png" width="22">
                   +57 301 4359875
                 </p>
-
-                <div class="d-flex justify-content-center">
-                  <a href="Misalitasmall77.html"
-                    class="justify-content-center rounded-4 p-2 d-inline-flex">
-                    <img src="imagenes/general/location2.png" width="50">
-                  </a>
-                </div>
-
+                <div class="rounded-4 shadow" id="map2" style="width: 380px; height: 300px"></div>
               </div>
             </div>
           </div>
         </div>
-
+        
         <!-- CARD 3 -->
         <div class="col">
           <div class="card shadow-lg border-0 rounded-4 overflow-hidden" style="background-color: rgb(0,120,220,0.85);">
@@ -160,12 +137,9 @@
             <div class="card-body text-white">
               <h4 class="fw-bold text-center">Steak House Más Finca</h4>
 
-              <button id="desplegar" class="w-100 border-0 rounded-4 py-2 my-2" data-bs-toggle="collapse"
-                data-bs-target="#collapseFinca">
-                <img src="imagenes/imagenes restaurante/gesture.png" width="28">
-              </button>
+              
 
-              <div class="collapse" id="collapseFinca">
+              <div class="" id="collapseFinca">
 
                 <p class="mt-2">
                   <strong>Acerca de:</strong><br>
@@ -181,19 +155,12 @@
                   <img src="imagenes/imagenes restaurante/telefonoico.png" width="22">
                   +57 313 6264892
                 </p>
-
-                <div class="d-flex justify-content-center">
-                  <a href="Steakhousemasfinca.html"
-                    class="justify-content-center rounded-4 p-2 d-inline-flex">
-                    <img src="imagenes/general/location2.png" width="50">
-                  </a>
-                </div>
-
+                <div class="rounded-4 shadow" id="map3" style="width: 380px; height: 300px"></div>
               </div>
             </div>
           </div>
         </div>
-
+        
       </article>
 
       <!-- Botón Ver Más -->
@@ -236,10 +203,60 @@
         <p class="">© 2025 Alcaldía de Itagüí - Todos los derechos reservados</p>
       </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      // Inicializa el mapa centrado (lat, lon) y con zoom
+      var map = L.map('map').setView([6.172471771934666, -75.63770098035873], 19); // ejemplo: Madrid
+
+      // Capa de teselas (OpenStreetMap)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Marcador de ejemplo con popup
+      L.marker([6.172471771934666, -75.63770098035873]).addTo(map)
+        .bindPopup('Lisbon Restobar')
+        .openPopup();
+
+      // Añade control de escala
+      L.control.scale().addTo(map);
+      // Inicializa el mapa centrado (lat, lon) y con zoom
+      const map2 = L.map('map2').setView([6.156609106865588, -75.62684448133979], 19); // ejemplo: Madrid
+
+      // Capa de teselas (OpenStreetMap)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map2);
+
+      // Marcador de ejemplo con popup
+      L.marker([6.156609106865588, -75.62684448133979]).addTo(map2)
+        .bindPopup('Mis Alitas Mall 77')
+        .openPopup();
+
+      // Añade control de escala
+      L.control.scale().addTo(map2);
+      // Inicializa el mapa centrado (lat, lon) y con zoom
+      const map3 = L.map('map3').setView([6.1858124275456765, -75.5879024391931], 19); // ejemplo: Madrid
+
+      // Capa de teselas (OpenStreetMap)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      }).addTo(map3);
+
+      // Marcador de ejemplo con popup
+      L.marker([6.1858124275456765, -75.5879024391931]).addTo(map3)
+        .bindPopup('Steak House Más Finca')
+        .openPopup();
+
+      // Añade control de escala
+      L.control.scale().addTo(map3);
+    </script>
 </body>
 
 </html>

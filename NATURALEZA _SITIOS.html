@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="General.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-
-    </style>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body class="bg-light">
@@ -51,61 +50,62 @@
     <main class="container my-5 d-flex flex-column gap-5">
 
         <!-- 1. MANZANILLO (IZQUIERDA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/manzanillo.png" class="img-fluid w-100 h-100 object-fit-cover" />
                 <a id="location"
                     class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;"
-                    href="Reservanatural.html"><img
+                    style="right: -1rem; bottom: -0.5rem;" href="Reservanatural.html"><img
                         src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Reserva Natural Pico El Manzanillo</h2>
                 <p>Un área protegida con una enorme diversidad de flora y fauna, ideal para senderismo, caminatas
                     ecológicas y contemplación de la naturaleza.</p>
             </div>
+            <div class="col-md-4" id="map" style="width: 344px; height: 294px;"></div>
         </div>
 
         <!-- 2. DITAIRES (DERECHA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5 flex-md-row-reverse">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/ditaires_redimensionada.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
                 <a id="location"
                     class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;"
-                    href="Humedalditaires.html"><img
+                    style="right: -1rem; bottom: -0.5rem;" href="Humedalditaires.html"><img
                         src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Humedal Ditaires</h2>
                 <p>Zona natural urbana donde pueden observarse aves, mamíferos y plantas nativas en un entorno tranquilo
                     y protegido.</p>
             </div>
+            <div class="col-md-4" id="map2" style="width: 344px; height: 293px;"></div>
         </div>
 
         <!-- 3. LA MONTAÑA QUE PIENSA (IZQUIERDA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/477195897_988786986644986_8990792790551071098_n_redimensionada.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
                 <a id="location"
                     class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;"
-                    href="Montañaquepiensa.html"><img
+                    style="right: -1rem; bottom: -0.5rem;" href="Montañaquepiensa.html"><img
                         src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">La Montaña que Piensa</h2>
                 <p>Un mirador con espectaculares vistas de Itagüí y Medellín, además de arte urbano y espacios
                     culturales.</p>
             </div>
+            <div class="col-md-4" id="map3" style="width: 344px; height: 293px;">
+            </div>
         </div>
 
         <!-- 4. CERRO TRES DULCES NOMBRES (DERECHA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0 flex-md-row-reverse">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5 flex-md-row-reverse">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/557730900_1246505277521544_9108913054356645620_n_redimensionada.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
                 <a id="location"
@@ -113,29 +113,31 @@
                     style="right: -1rem; bottom: -0.5rem;" href="Cerrotresdulcesnombres.html"><img
                         src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Cerro de los Tres Dulces Nombres</h2>
                 <p>Un sitio perfecto para apreciar la ciudad desde otra perspectiva y disfrutar del entorno natural.</p>
             </div>
+            <div class="col-md-4" id="map4" style="width: 344px; height: 293px;"></div>
         </div>
 
         <!-- 5. ACUAPARQUE DITAIRES (IZQUIERDA) -->
-        <div class="row align-items-center bg-white shadow section-card p-0">
-            <div class="col-md-6 p-0 position-relative">
+        <div class="row align-items-center bg-white shadow section-card gap-5">
+            <div class="col-md-4 p-0 position-relative">
                 <img src="imagenes/naturaleza/acuaparque-ditaires_redimensionada.jpg"
                     class="img-fluid w-100 h-100 object-fit-cover" />
                 <a id="location"
                     class="shadow position-absolute translate-middle text-light text-shadow text-decoration-none rounded-circle"
-                    style="right: -1rem; bottom: -0.5rem;"
-                    href="Acuaparqueditaires.html"><img
+                    style="right: -1rem; bottom: -0.5rem;" href="Acuaparqueditaires.html"><img
                         src="imagenes/general/location2.png" alt="" width="50"></a>
             </div>
-            <div class="col-md-6 p-5">
+            <div class="col-md-4">
                 <h2 class="fw-bold">Acuaparque Ditaires</h2>
                 <p>Un parque acuático ideal para disfrutar en familia, con piscinas, toboganes y amplias zonas verdes
                     para descansar.</p>
             </div>
+            <div class="col-md-4" id="map5" style="width: 344px; height: 293px;"></div>
         </div>
+
         <div class="d-flex justify-content-center">
             <a href="https://turismoantioquia.travel/itagui/" id="verma" class="btn"
                 style="width: fit-content; padding-inline: 3rem;">Ver más</a>
@@ -174,10 +176,90 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map = L.map('map').setView([6.192163308137175, -75.62724628715145], 19); // ejemplo: Madrid
 
-</html>
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        // Marcador de ejemplo con popup
+        L.marker([6.192163308137175, -75.62724628715145]).addTo(map)
+            .bindPopup('Reserva Natural Pico el Manzanillo')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map2 = L.map('map2').setView([6.167707964878664, -75.6279734966297], 6); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map2);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.167707964878664, -75.6279734966297]).addTo(map2)
+            .bindPopup('Humedal Ditaires')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map2);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map3 = L.map('map3').setView([6.195301257006107, -75.61889002353229], 19); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map3);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.195301257006107, -75.61889002353229]).addTo(map3)
+            .bindPopup('La Montaña que piensa')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map3);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map4 = L.map('map4').setView([6.177880112295311, -75.61943118587003], 6); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map4);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.177880112295311, -75.61943118587003]).addTo(map4)
+            .bindPopup('Cerro de los Tres Dulces Nombres')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map4);
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map5 = L.map('map5').setView([6.169556346069899, -75.62818702310685], 6); // ejemplo: Madrid
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map5);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.169556346069899, -75.62818702310685]).addTo(map5)
+            .bindPopup('Acuaparque Ditaires')
+            .openPopup();
+
+        // Añade control de escala
+        L.control.scale().addTo(map5);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
