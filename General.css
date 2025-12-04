@@ -47,6 +47,14 @@ input::placeholder {
     padding: 5px 15px;
 }
 
+#person1 {
+    display: block;
+}
+
+#person2 {
+    display: none;
+}
+
 .search-bar input {
     border: none;
     background: transparent;
@@ -327,6 +335,14 @@ body {
 }
 
 @media (max-width: 414px) {
+    #person1 {
+        display: none;
+    }
+
+    #person2 {
+        display: block;
+    }
+
     #contact {
         margin-top: 0rem;
     }
