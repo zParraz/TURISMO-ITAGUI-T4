@@ -34,6 +34,63 @@ input::placeholder {
     align-items: center;
 }
 
+/* search.css - Estilos mejorados para la barra de búsqueda */
+#busqueda {
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+#busqueda:focus-within {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 120, 220, 0.4) !important;
+}
+
+#searchInput {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1.1rem !important;
+    padding: 10px 20px !important;
+    width: 100% !important;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#searchInput:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#searchButton {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    padding: 0 20px !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease !important;
+}
+
+#searchButton:hover {
+    transform: scale(1.2) !important;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    #busqueda {
+        width: 90% !important;
+        margin: 20px auto !important;
+    }
+    
+    #searchInput {
+        font-size: 1rem !important;
+        padding: 8px 15px !important;
+    }
+}
+
 /* Search bar */
 .search-bar {
     background-color: #007bff;
@@ -112,7 +169,7 @@ input::placeholder {
     height: 55vh;
     width: 100%;
     object-fit: cover;
-    filter: brightness(100%);
+    filter: brightness(50%);
 }
 
 .section-card {
